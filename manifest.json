@@ -1,0 +1,19 @@
+{
+  "name": "hiveminder-localtimetrack",
+  "description": "hiveminder-localtimetrack for chrome",
+  "version": "0.0.0.1",
+  "content_scripts": [
+      {
+          "matches": ["http://hiveminder.com/*",
+              "https://hiveminder.com/*"
+          ],
+          "css": ["hiveminder.css"],
+          "js": ["jGrowl2webkitNotifications.js",
+                 "hiveminder-local-time-track.user.js"],
+          "all_frames": true
+      }
+  ],
+  "permissions": [
+      "notifications"
+  ]
+}
