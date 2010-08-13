@@ -7,7 +7,7 @@ Yeah, I know Hiveminder supports time tracking. But it doesn't work at offline.
 I sometimes place myself at offline, because working at online has a number of temptations, twitter/irc/im and so on.. That's why I want this.
 
 ## Screenshot
-<a href="http://www.flickr.com/photos/hiramekii/4886764247/" title="Hiveminder localtimetrack for chrome by hiramekii, on Flickr"><img src="http://farm5.static.flickr.com/4074/4886764247_918570778a_z.jpg" width="640" height="400" alt="Hiveminder localtimetrack for chrome" /></a
+<a href="http://www.flickr.com/photos/hiramekii/4886764247/" title="Hiveminder localtimetrack for chrome by hiramekii, on Flickr"><img src="http://farm5.static.flickr.com/4074/4886764247_918570778a_z.jpg" width="640" height="400" alt="Hiveminder localtimetrack for chrome" /></a>
 
 ## Features
 
