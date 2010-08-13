@@ -1,6 +1,7 @@
 {
   "name": "hiveminder-localtimetrack",
   "description": "hiveminder-localtimetrack for chrome",
+  "id": "cnmdanbppalmcbbddhkfgdlgjacejlma",
   "version": "0.0.0.1",
   "content_scripts": [
       {
