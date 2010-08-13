@@ -8,6 +8,7 @@
      }
 
 function Notifier() {
+    this.init.apply(this, arguments);
 }
 
 Notifier.prototype.init = function() {
@@ -67,8 +68,7 @@ function strip_tags (str) {
 
 if (w.jQuery && w.jQuery.jGrowl && w.webkitNotifications) {
     var jGrowl = jQuery.jGrowl;
-    var notifier = new Notifier;
-    notifier.init();
+    var notifier = new Notifier();
 
     jQuery.jGrowl = function(message, option) {
         if (typeof(option) != "object") option = {};
@@ -82,18 +82,20 @@ if (w.jQuery && w.jQuery.jGrowl && w.webkitNotifications) {
         alert('please click Request Permission.');
     }
 
-        // あとで修正する
-        var request_permission = document.createElement('button');
-        request_permission.innerText = 'Request Permission';
-        request_permission.id = 'requestPermission';
-        document.getElementById("content").appendChild(request_permission);
-        document.getElementById("requestPermission")
-            .addEventListener('click', function() {
-                notifier.requestPermission();
-        });
+    var request_permission = document.createElement('button');
+    
+    request_permission.innerText      = 'Request Permission';
+    request_permission.id             = 'requestPermission';
+    request_permission.style.cssFloat = 'right';
 
+    request_permission.addEventListener('click', function() {
+        notifier.requestPermission();
+    });
+
+    document.getElementById("content-wrapper2").insertBefore(request_permission, this.firstChild);
 } else {
     return false;
 }
 
 })(window);
+
