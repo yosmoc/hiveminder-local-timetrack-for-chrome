@@ -14,7 +14,8 @@ I sometimes place myself at offline, because working at online has a number of t
 * Simple time tracking
 * Enable webkitnotification instead of jGrowl
 * Notify current tasks every 10 minutes (it probably get you back to work ;)
-* Notify "What are you doing now?" every 10 minutes, if you don't work 
+* If you don't work timetracking, notify "What are you doing now?" every 10 minutes.
+* Save elapsed time on localStorage.
 
 ## Current issues
 
@@ -25,4 +26,5 @@ I sometimes place myself at offline, because working at online has a number of t
 * install extension. https://chrome.google.com/extensions/detail/hkleomkjlbhamikmcfnagbaafmdoecba
 * open Hiveminder.com
 * click request Permission
+
 <a href="http://www.flickr.com/photos/hiramekii/4887359556/" title="Later - Hiveminder by hiramekii, on Flickr"><img src="http://farm5.static.flickr.com/4099/4887359556_313afaa5f1_z.jpg" width="640" height="514" alt="Later - Hiveminder" /></a>
