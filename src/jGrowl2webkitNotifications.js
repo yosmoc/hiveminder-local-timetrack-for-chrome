@@ -1,12 +1,3 @@
-(function(window,loaded){
-     if (!loaded && this.chrome) {
-	 var fn = '(' + arguments.callee.toString() + ')(this,true);';
-         var script = document.createElement('script');
-	 script.appendChild(document.createTextNode(fn));
-	 document.getElementsByTagName("head")[0].appendChild(script);
-	 return;
-     }
-
 function Notifier() {
     this.init.apply(this, arguments);
 }
@@ -96,6 +87,4 @@ if (w.jQuery && w.jQuery.jGrowl && w.webkitNotifications) {
 } else {
     return false;
 }
-
-})(window);
 

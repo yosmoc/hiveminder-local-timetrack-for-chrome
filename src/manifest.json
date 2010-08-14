@@ -2,7 +2,7 @@
   "name": "hiveminder-localtimetrack",
   "description": "hiveminder-localtimetrack for chrome",
   "id": "cnmdanbppalmcbbddhkfgdlgjacejlma",
-  "version": "0.0.1",
+  "version": "0.0.2",
    "icons": {
       "16": "hiveminder_16x16x32.png",
       "32": "hiveminder_32x32x32.png",
@@ -15,8 +15,7 @@
               "https://hiveminder.com/*"
           ],
           "css": ["hiveminder.css"],
-          "js": ["jGrowl2webkitNotifications.js",
-                 "hiveminder-local-time-track.user.js"],
+          "js": ["insert_sitescript.js"],
           "all_frames": true
       }
   ],

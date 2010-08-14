@@ -6,16 +6,6 @@
 // @include        https://hiveminder.com/*
 // ==/UserScript==
 
-(function(window,loaded){
-     if (!loaded && this.chrome) {
-	 var fn = '(' + arguments.callee.toString() + ')(this,true);';
-
-         var script = document.createElement('script');
-	 script.appendChild(document.createTextNode(fn));
-	 document.getElementsByTagName("head")[0].appendChild(script);
-	 return;
-     }
-
 (function (d, w) {
     var debug = false;
     function log() { debug && w.console.log.apply(null, arguments)  };
@@ -181,6 +171,5 @@
     });
 
     global_timer();
-})(document, (typeof(unsafeWindow) != "undefined") ? unsafeWindow : window);
 
-})(window);
+})(document, (typeof(unsafeWindow) != "undefined") ? unsafeWindow : window);
