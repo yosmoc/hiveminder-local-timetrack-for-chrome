@@ -19,7 +19,13 @@
           "all_frames": true
       }
   ],
+  "background_page": "background.html",
+  "browser_action": {
+      "default_title": "hiveminder",
+      "default_icon": "hiveminder_32x32x32.png"
+  },
   "permissions": [
-      "notifications"
+      "notifications",
+      "tabs"
   ]
 }
