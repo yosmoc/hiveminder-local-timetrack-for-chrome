@@ -170,6 +170,10 @@
         .append( task.indicator );
     });
 
+    $(w).bind('beforeunload', function(e) {
+        if (task_running()) stop();
+    });
+
     global_timer();
 
 })(document, (typeof(unsafeWindow) != "undefined") ? unsafeWindow : window);
