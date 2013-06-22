@@ -10,6 +10,10 @@
       "48": "hiveminder_48x48x32.png",
       "128": "hiveminder_128x128x32.png"
    },
+  "web_accessible_resources": [
+      "jGrowl2webkitNotifications.js",
+      "hiveminder-local-time-track.user.js"
+  ],
   "content_scripts": [
       {
           "matches": ["http://hiveminder.com/*",
