@@ -2,6 +2,7 @@
   "name": "hiveminder-localtimetrack",
   "description": "hiveminder-localtimetrack for chrome",
   "id": "cnmdanbppalmcbbddhkfgdlgjacejlma",
+  "manifest_version": 2,
   "version": "0.0.4",
    "icons": {
       "16": "hiveminder_16x16x32.png",
@@ -19,7 +20,9 @@
           "all_frames": true
       }
   ],
-  "background_page": "background.html",
+  "background": {
+    "scripts": ["background.js"]
+  },
   "browser_action": {
       "default_title": "hiveminder",
       "default_icon": "hiveminder_32x32x32.png"
